@@ -1,265 +1,518 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML Beauty Bar & Spa | L'Art du Bien-Être</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script>
+
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ML Beauty Bar | L'Excellence du Bien-être à Lubumbashi</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
         tailwind.config = {
+            darkMode: "class",
             theme: {
                 extend: {
-                    colors: {
-                        'spa-gold': '#D4AF37',
-                        'spa-cream': '#FAF9F6',
-                        'spa-rose': '#F8E8E4',
-                        'spa-dark': '#4A4A4A',
-                        'spa-accent': '#C5A059',
+                    "colors": {
+                        "tertiary-fixed": "#ffe088",
+                        "surface-bright": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#4a473e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#281719",
+                        "on-tertiary-container": "#816700",
+                        "tertiary-container": "#ffeab5",
+                        "on-secondary-fixed-variant": "#584144",
+                        "primary-container": "#f4ebd0",
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9f9",
+                        "secondary-fixed-dim": "#debfc2",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-low": "#f3f3f4",
+                        "surface-tint": "#645e49",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#f9d8db",
+                        "secondary": "#71585b",
+                        "on-secondary-container": "#755c5f",
+                        "on-primary-fixed-variant": "#4c4733",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#645e49",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-surface": "#1a1c1c",
+                        "surface-container-high": "#e8e8e8",
+                        "surface": "#f9f9f9",
+                        "on-primary-fixed": "#1f1c0b",
+                        "inverse-on-surface": "#f0f1f1",
+                        "primary-fixed": "#ebe2c8",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "outline": "#7b776d",
+                        "error": "#ba1a1a",
+                        "on-background": "#1a1c1c",
+                        "inverse-primary": "#cec6ad",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary-container": "#706a54",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary": "#735c00",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "secondary-fixed": "#fcdbde",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#cbc6ba",
+                        "primary-fixed-dim": "#cec6ad",
+                        "on-tertiary-fixed": "#241a00"
                     },
-                    fontFamily: {
-                        'display': ['Playfair Display', 'serif'],
-                        'body': ['Montserrat', 'sans-serif'],
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "section-gap-desktop": "120px",
+                        "section-gap-mobile": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["DM Sans"],
+                        "body-lg": ["DM Sans"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-caps": ["DM Sans"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}]
                     }
-                }
-            }
+                },
+            },
         }
     </script>
-    <style>
-        .glass {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
         }
-        .service-card:hover .service-overlay {
-            opacity: 1;
+        .luxury-shadow {
+            box-shadow: 0 10px 40px rgba(248, 215, 218, 0.3);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .custom-cursor {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #735c00;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.2s ease-out;
+        }
+        .btn-gold {
+            background: linear-gradient(135deg, #735c00 0%, #ffe088 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            box-shadow: 0 0 20px rgba(115, 92, 0, 0.4);
+            transform: scale(1.02);
+        }
+        .gallery-item img {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body class="bg-spa-cream text-spa-dark font-body">
-
-    <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 glass">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="font-display text-2xl font-semibold tracking-tight text-spa-gold">
-                ML <span class="text-spa-dark">Beauty Bar</span>
-            </div>
-            <div class="hidden md:flex gap-8 items-center text-sm font-medium uppercase tracking-widest">
-                <a href="#about" class="hover:text-spa-gold transition-colors">À Propos</a>
-                <a href="#services" class="hover:text-spa-gold transition-colors">Soins</a>
-                <a href="#gallery" class="hover:text-spa-gold transition-colors">Galerie</a>
-                <a href="#booking" class="bg-spa-gold text-white px-6 py-2 rounded-full hover:bg-spa-accent transition-all">Réserver</a>
-            </div>
-            <button class="md:hidden text-spa-dark">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=2070" 
-                 alt="Luxury Spa" class="w-full h-full object-cover scale-105 animate-pulse-slow" 
-                 style="animation: pulse 10s infinite alternate;">
-            <div class="absolute inset-0 bg-gradient-to-b from-spa-cream/40 via-transparent to-spa-cream"></div>
-        </div>
-        
-        <div class="relative z-10 text-center px-6 max-w-4xl">
-            <span class="font-medium uppercase tracking-[0.3em] text-spa-gold mb-4 block text-sm">L'excellence du soin</span>
-            <h1 class="font-display text-5xl md:text-7xl text-spa-dark mb-8 leading-tight">
-                Révélez votre <span class="italic text-spa-gold">éclat naturel</span>
-            </h1>
-            <p class="text-lg md:text-xl text-spa-dark/80 mb-10 max-w-2xl mx-auto font-light">
-                Une parenthèse de douceur et de sérénité au cœur de la ville. Confiez votre beauté à nos mains expertes pour un moment d'évasion absolue.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#booking" class="bg-spa-gold text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:bg-spa-accent transition-all transform hover:scale-105">
-                    Réserver un soin
-                </a>
-                <a href="#services" class="bg-white text-spa-dark px-10 py-4 rounded-full font-semibold border border-spa-gold/30 hover:bg-spa-rose transition-all">
-                    Découvrir la carte
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div class="relative">
-            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1000" 
-                 alt="Spa Interior" class="rounded-2xl shadow-2xl relative z-10">
-            <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-spa-rose rounded-2xl -z-0"></div>
-        </div>
-        <div class="space-y-6">
-            <span class="text-spa-gold font-semibold tracking-widest uppercase text-sm">Notre Philosophie</span>
-            <h2 class="font-display text-4xl text-spa-dark leading-snug">Plus qu'un soin, <br>une renaissance.</h2>
-            <p class="text-spa-dark/70 leading-relaxed font-light">
-                Chez ML Beauty Bar, nous croyons que la beauté commence par un sentiment de bien-être profond. Chaque soin est personnalisé pour répondre aux besoins uniques de votre peau et de votre esprit.
-            </p>
-            <p class="text-spa-dark/70 leading-relaxed font-light">
-                Alliant techniques ancestrales et innovations modernes, notre spa est un sanctuaire dédié à la détente, où le temps s'arrête pour laisser place à la sérénité.
-            </p>
-            <div class="flex gap-8 pt-4">
-                <div class="text-center">
-                    <div class="font-display text-3xl text-spa-gold">10+</div>
-                    <div class="text-xs uppercase tracking-tighter text-spa-dark/50">Ans d'expérience</div>
-                </div>
-                <div class="text-center">
-                    <div class="font-display text-3xl text-spa-gold">5k+</div>
-                    <div class="text-xs uppercase tracking-tighter text-spa-dark/50">Clientes ravies</div>
-                </div>
-                <div class="text-center">
-                    <div class="font-display text-3xl text-spa-gold">100%</div>
-                    <div class="text-xs uppercase tracking-tighter text-spa-dark/50">Produits Bio</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-24 bg-spa-rose/30 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <span class="text-spa-gold font-semibold tracking-widest uppercase text-sm block mb-2">L'Art du Soin</span>
-                <h2 class="font-display text-4xl text-spa-dark">Notre Carte des Soins</h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="group relative overflow-hidden rounded-3xl bg-white shadow-sm hover:shadow-xl transition-all duration-500">
-                    <img src="https://images.unsplash.com/photo-1570172619644-797552f4877e?auto=format&fit=crop&q=80&w=800" 
-                         alt="Facial" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="p-8">
-                        <h3 class="font-display text-2xl mb-3">Soin du Visage Éclat</h3>
-                        <p class="text-spa-dark/60 text-sm mb-6 font-light">Nettoyage profond et hydratation intense pour un teint lumineux et reposé.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-spa-gold font-semibold">À partir de 45$</span>
-                            <a href="#booking" class="text-xs uppercase tracking-widest font-bold text-spa-dark hover:text-spa-gold transition-colors">Réserver <span class="material-symbols-outlined text-sm align-middle">arrow_forward</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="group relative overflow-hidden rounded-3xl bg-white shadow-sm hover:shadow-xl transition-all duration-500">
-                    <img src="https://images.unsplash.com/photo-1519823551278-6d7326973946?auto=format&fit=crop&q=80&w=800" 
-                         alt="Massage" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="p-8">
-                        <h3 class="font-display text-2xl mb-3">Massage Signature</h3>
-                        <p class="text-spa-dark/60 text-sm mb-6 font-light">Un voyage sensoriel pour libérer les tensions et apaiser l'esprit en profondeur.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-spa-gold font-semibold">À partir de 80$</span>
-                            <a href="#booking" class="text-xs uppercase tracking-widest font-bold text-spa-dark hover:text-spa-gold transition-colors">Réserver <span class="material-symbols-outlined text-sm align-middle">arrow_forward</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="group relative overflow-hidden rounded-3xl bg-white shadow-sm hover:shadow-xl transition-all duration-500">
-                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=800" 
-                         alt="Nails" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="p-8">
-                        <h3 class="font-display text-2xl mb-3">Beauté des Mains & Pieds</h3>
-                        <p class="text-spa-dark/60 text-sm mb-6 font-light">Une manucure et pédicure raffinée pour des mains et des pieds impeccables.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-spa-gold font-semibold">À partir de 30$</span>
-                            <a href="#booking" class="text-xs uppercase tracking-widest font-bold text-spa-dark hover:text-spa-gold transition-colors">Réserver <span class="material-symbols-outlined text-sm align-middle">arrow_forward</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <span class="text-spa-gold font-semibold tracking-widest uppercase text-sm block mb-2">L'Atmosphère</span>
-            <h2 class="font-display text-4xl text-spa-dark">L'Art du Détail</h2>
-        </div>
-        
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img src="https://images.unsplash.com/photo-1544161515-bc1ca7976753?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded-2xl hover:opacity-90 transition-all cursor-pointer" alt="Spa Detail 1">
-            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51ed33?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded-2xl hover:opacity-90 transition-all cursor-pointer" alt="Spa Detail 2">
-            <img src="https://images.unsplash.com/photo-1519823551278-6d7326973946?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded-2xl hover:opacity-90 transition-all cursor-pointer" alt="Spa Detail 3">
-            <img src="https://images.unsplash.com/photo-1596178065887-119872ef3778?auto=format&fit=crop&q=80&w=600" class="w-full h-64 object-cover rounded-2xl hover:opacity-90 transition-all cursor-pointer" alt="Spa Detail 4">
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-24 bg-spa-dark text-spa-cream px-6 overflow-hidden relative">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-spa-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center mb-16">
-                <span class="text-spa-gold font-semibold tracking-widest uppercase text-sm block mb-2">Témoignages</span>
-                <h2 class="font-display text-4xl">L'avis de nos clientes</h2>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass p-8 rounded-3xl text-spa-dark italic font-light relative">
-                    <span class="material-symbols-outlined absolute -top-4 -left-4 text-spa-gold text-4xl">format_quote</span>
-                    "Une expérience divine. Je sors de chaque séance totalement transformée. L'accueil est chaleureux et le cadre est juste magnifique."
-                    <div class="mt-6 font-semibold not-italic text-spa-gold">— Sarah M.</div>
-                </div>
-                <div class="glass p-8 rounded-3xl text-spa-dark italic font-light relative">
-                    <span class="material-symbols-outlined absolute -top-4 -left-4 text-spa-gold text-4xl">format_quote</span>
-                    "Le meilleur soin du visage que j'ai jamais fait. On sent vraiment la qualité des produits et l'expertise des thérapeutes."
-                    <div class="mt-6 font-semibold not-italic text-spa-gold">— Julie K.</div>
-                </div>
-                <div class="glass p-8 rounded-3xl text-spa-dark italic font-light relative">
-                    <span class="material-symbols-outlined absolute -top-4 -left-4 text-spa-gold text-4xl">format_quote</span>
-                    "Un vrai havre de paix. Je recommande les massages à 100%, c'est le seul moment de ma semaine où je déconnecte vraiment."
-                    <div class="mt-6 font-semibold not-italic text-spa-gold">— Amina L.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking Section -->
-    <section id="booking" class="py-24 px-6 max-w-4xl mx-auto text-center">
-        <div class="bg-white p-12 rounded-[3rem] shadow-2xl border border-spa-gold/20 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-2 bg-spa-gold"></div>
-            <h2 class="font-display text-4xl text-spa-dark mb-6">Prête pour votre moment ?</h2>
-            <p class="text-spa-dark/70 mb-10 font-light">
-                Réservez votre rendez-vous en quelques secondes via WhatsApp. 
-                Nous vous répondrons instantanément pour confirmer votre créneau.
-            </p>
-            <a href="https://wa.me/YOUR_NUMBER?text=Bonjour%20ML%20Beauty%20Bar,%20je%20souhaite%20réserver%20un%20soin." 
-               class="inline-flex items-center gap-3 bg-[#25D366] text-white px-12 py-5 rounded-full font-semibold text-lg shadow-lg hover:bg-green-600 transition-all transform hover:scale-105">
-                <span class="material-symbols-outlined">whatsapp</span>
-                Réserver via WhatsApp
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-nav luxury-shadow transition-all duration-300">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-gutter py-4">
+<div class="flex items-center gap-4">
+<img alt="ML Beauty Bar Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBfUomvpeIyWPzJO2CI8t_W6qFWkEGBwnBAjc68hla6cr64LTGTIMz7Rqrzw__kW__IdrLnoyfpwZuqESDpkFDUj3JYO_eA3wbEXRZ0tVcqAD3xRqtDhdV0Y_X3SpxCEEAdCTp4vljMHzMSKIRMVGJb_CiXWSeIysYI180AoudJeMqqiblBEupf4TcsZm4DWbXuMdRUx1aBcymVgwGGI4KeLYq2zmlUwT0BmsuaMWUXOzEpWYU-XPpZuI04D1YXI5ue3SLGmOhq3w"/>
+<span class="font-headline-md text-primary tracking-tight hidden sm:block">ML Beauty Bar</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-body-md text-label-caps text-tertiary border-b border-tertiary pb-1" href="#accueil">Accueil</a>
+<a class="font-body-md text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
+<a class="font-body-md text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#tarifs">Tarifs</a>
+<a class="font-body-md text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#galerie">Galerie</a>
+<a class="font-body-md text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#avis">Avis</a>
+<a class="font-body-md text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<a class="btn-gold text-on-primary font-label-caps px-6 py-3 rounded-full hover:scale-105 transition-transform duration-300 shadow-lg uppercase tracking-widest text-[10px]" href="https://wa.me/243816388322">
+                Réserver sur WhatsApp
             </a>
-            <p class="mt-6 text-xs text-spa-dark/40 uppercase tracking-widest">Réponse rapide garantie sous 30 min</p>
-        </div>
-    </section>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="accueil">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A luxurious Dubai-style spa interior with soft ambient lighting, golden accents, and minimalist white furniture. The atmosphere is serene and expensive, featuring clean architectural lines and a sense of quiet opulence with warm beige and cream tones dominating the frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN-qDHRjOc6deLDk7Wo_9LapNne1UNQ5dU-s-vAzLl_Uj3grwZmW-XcOzi5hoJSpaotLTBDmih7g-K38RY2Ub15UoBfes60YreobWZF6mK-5D9H1ZYd1ePXYGiVnVuTvfHUTIBxJ_fU-HRij2V8JUdzQyxU-SKt1feYG9l-0eq7DdpW7-uwEK9bjSLG-snQFJMe6kml0_WkpQ6kqH0Jn_-ol1_5iZOQk1cw6hcqiUFRHafQ2Mb-UtFe9j1-YHIl49DmYkbfQ3E-h4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="md:w-3/5 space-y-8">
+<span class="font-label-caps text-tertiary tracking-[0.3em] uppercase block">L'Excellence à Lubumbashi</span>
+<h1 class="font-display-lg text-on-surface leading-tight">
+                    Offrez-vous une parenthèse de <span class="italic text-primary">luxe</span>, de beauté et de sérénité.
+                </h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl">
+                    Un sanctuaire de prestige au cœur de la ville, où chaque soin est un rituel de renaissance. Découvrez le raffinement ultime inspiré des plus grands standards internationaux.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="btn-gold text-on-primary px-8 py-4 rounded-full font-label-caps uppercase tracking-widest shadow-xl flex items-center justify-center gap-2" href="https://wa.me/243816388322">
+                        Réserver sur WhatsApp
+                    </a>
+<a class="border border-outline text-primary px-8 py-4 rounded-full font-label-caps uppercase tracking-widest hover:bg-primary-container transition-colors flex items-center justify-center" href="#services">
+                        Découvrir nos services
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section À propos -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-tl-[100px] rounded-br-[100px] overflow-hidden luxury-shadow">
+<img class="w-full h-full object-cover" data-alt="Close-up of a professional aesthetician's hands performing a delicate facial treatment on a relaxed client. The setting is a bright, high-end spa room with soft pink floral accents and gold-trimmed equipment, reflecting a mood of professional care and quiet opulence." src="/imgs/image.png"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-primary-container rounded-full -z-10 blur-3xl opacity-50"></div>
+</div>
+<div class="space-y-6">
+<h2 class="font-headline-lg text-primary">L'Excellence du Bien-être à Lubumbashi</h2>
+<p class="font-body-lg text-on-surface-variant">
+                        ML Beauty Bar Spa est né d'une vision : apporter l'opulence feutrée et le savoir-faire des spas de Dubaï au cœur du Haut-Katanga. 
+                    </p>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                        Chaque détail de notre établissement a été pensé pour abaisser votre rythme cardiaque dès l'entrée. Des textures organiques aux parfums subtils, nous avons créé un sanctuaire où l'élégance rencontre l'expertise technique la plus pointue. Ici, le luxe n'est pas une option, c'est notre standard.
+                    </p>
+<div class="pt-4 grid grid-cols-2 gap-8 border-t border-outline-variant">
+<div>
+<span class="block font-headline-md text-tertiary">100%</span>
+<span class="font-label-caps text-on-surface-variant">Produits Premium</span>
+</div>
+<div>
+<span class="block font-headline-md text-tertiary">Expertise</span>
+<span class="font-label-caps text-on-surface-variant">Standards Dubaï</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Services -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface" id="services">
+<div class="max-w-container-max mx-auto px-gutter text-center mb-16">
+<span class="font-label-caps text-tertiary tracking-[0.3em] uppercase block mb-4">Nos Rituels</span>
+<h2 class="font-headline-lg text-on-surface">Une Expérience Sensorielle Complète</h2>
+</div>
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Massage -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl luxury-shadow hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined scale-150">spa</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Massage</h3>
+<p class="font-body-md text-on-surface-variant">Détente profonde et évasion sensorielle pour libérer toutes les tensions du corps et de l'esprit.</p>
+</div>
+<!-- Soin du visage -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl luxury-shadow hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined scale-150">face_6</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Soin du visage</h3>
+<p class="font-body-md text-on-surface-variant">Révélez l'éclat naturel de votre peau avec nos protocoles de pointe et produits haut de gamme.</p>
+</div>
+<!-- Manucure -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl luxury-shadow hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined scale-150">dry_cleaning</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Manucure</h3>
+<p class="font-body-md text-on-surface-variant">L'élégance jusqu'au bout des doigts avec une pose de vernis précise et des soins nourrissants.</p>
+</div>
+<!-- Pédicure -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl luxury-shadow hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined scale-150">footprint</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Pédicure</h3>
+<p class="font-body-md text-on-surface-variant">Un soin royal pour vos pieds, alliant relaxation profonde et esthétique impeccable.</p>
+</div>
+<!-- Coiffure -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl luxury-shadow hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined scale-150">content_cut</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Coiffure</h3>
+<p class="font-body-md text-on-surface-variant">Sublimez votre chevelure avec nos experts coiffeurs pour un look quotidien ou événementiel.</p>
+</div>
+<!-- Makeup -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl luxury-shadow hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined scale-150">brush</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Makeup</h3>
+<p class="font-body-md text-on-surface-variant">L'art du maquillage pour vos plus grands moments, sublimant vos traits avec subtilité et luxe.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Tarifs -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-bright" id="tarifs">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<h2 class="font-headline-lg text-primary sticky top-32">Carte des Soins &amp; Tarifs</h2>
+<p class="mt-4 text-on-surface-variant font-body-md">Une transparence totale pour un service d'exception. Tous nos tarifs reflètent l'exclusivité de nos produits et le niveau de formation de nos thérapeutes.</p>
+<a class="inline-block mt-8 text-tertiary font-label-caps border-b border-tertiary pb-1 hover:opacity-70 transition-opacity" href="https://wa.me/243816388322">Demander un devis personnalisé</a>
+</div>
+<div class="md:w-2/3 space-y-12">
+<div class="space-y-6">
+<h4 class="font-label-caps text-on-surface-variant tracking-widest border-b border-outline-variant pb-2">MASSAGES &amp; SOINS CORPS</h4>
+<div class="flex justify-between items-end gap-4">
+<span class="font-body-lg text-on-surface">Massage relaxant (60 min)</span>
+<div class="flex-grow border-b border-dotted border-outline-variant mb-1"></div>
+<span class="font-headline-md text-tertiary">à partir de 50 $</span>
+</div>
+<div class="flex justify-between items-end gap-4">
+<span class="font-body-lg text-on-surface">Massage deep tissue</span>
+<div class="flex-grow border-b border-dotted border-outline-variant mb-1"></div>
+<span class="font-headline-md text-tertiary">à partir de 65 $</span>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-on-surface-variant tracking-widest border-b border-outline-variant pb-2">VISAGE &amp; ESTHÉTIQUE</h4>
+<div class="flex justify-between items-end gap-4">
+<span class="font-body-lg text-on-surface">Soin du visage Hydrafacial</span>
+<div class="flex-grow border-b border-dotted border-outline-variant mb-1"></div>
+<span class="font-headline-md text-tertiary">à partir de 45 $</span>
+</div>
+<div class="flex justify-between items-end gap-4">
+<span class="font-body-lg text-on-surface">Pose vernis semi-permanent</span>
+<div class="flex-grow border-b border-dotted border-outline-variant mb-1"></div>
+<span class="font-headline-md text-tertiary">à partir de 25 $</span>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-on-surface-variant tracking-widest border-b border-outline-variant pb-2">COIFFURE &amp; MAQUILLAGE</h4>
+<div class="flex justify-between items-end gap-4">
+<span class="font-body-lg text-on-surface">Coiffure de soirée</span>
+<div class="flex-grow border-b border-dotted border-outline-variant mb-1"></div>
+<span class="font-headline-md text-tertiary">à partir de 40 $</span>
+</div>
+<div class="flex justify-between items-end gap-4">
+<span class="font-body-lg text-on-surface">Maquillage événementiel</span>
+<div class="flex-grow border-b border-dotted border-outline-variant mb-1"></div>
+<span class="font-headline-md text-tertiary">à partir de 35 $</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Galerie -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-lowest" id="galerie">
+<div class="max-w-container-max mx-auto px-gutter mb-12">
+<h2 class="font-headline-lg text-center text-on-surface">Immersion Visuelle</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+<div class="gallery-item aspect-square overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover" data-alt="A detailed shot of essential oils and smooth basalt stones arranged on a bamboo mat in a high-end spa. The soft, warm light from nearby candles creates a cozy, opulent atmosphere. The color palette is dominated by earthy browns and soft gold tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAME-LEnpwH-n9_d0F7oUCO0H4HY7qzZDEop91UAF-SVUrbj-CJLZbXR4U_14zZA13m1rOD3UDDGV0DF6Mlyw1nwv0igbB10QfSs8hMljb7HRY_u2wxF2e2InpbWkF8sR_YW3tNfmRA0eboL0dbgWq0_yNat1Bbojv5kCa6Ks8g62kxic3IYsviyxwl3wSF-7r-bBjL_Po60e9EwUaox99xI5toJMTP65ILMcveKaETiC9HTOxxu1JsLcMFli2t_0WU6jspTbCAYZQ"/>
+</div>
+<div class="gallery-item aspect-[3/4] md:row-span-2 overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover" data-alt="An expansive view of a luxury spa relaxation lounge with velvet chaises, floor-to-ceiling windows, and minimalist gold lighting fixtures. The space feels incredibly airy and serene, reflecting the Dubai luxury spa aesthetic with a neutral beige and cream palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcWutAxF2T6TaK0wxfo8LSM0EB0dJa_-_PRH_VYwhaRKF5HoouKebnCRayTVDT1bi89OKi5X8TKK-53HDai-zyeEY-5pcykjuMkZS7iSS-r0oTPtPdiAU9NacnmNT9OA2EPaGpD53Pr21BtyHbaInafpPaMHEuyApmlpCighUJciVWk7xnWzARO-MEdp90rw3Lx1CpMOb1UaoTTT5qiABTlY_ATMXxIwhHIa1_Ug8V9dB1-ckqrhsSj-AO-xbvAzMm5VaW0FdBU5A"/>
+</div>
+<div class="gallery-item aspect-square overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover" data-alt="A close-up of a beautifully manicured hand resting on a marble surface, surrounded by delicate white flower petals. The image captures the elegance and precision of a high-end salon service with soft, diffused lighting and a clean, sophisticated aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYxDfCxN8ilc2SuER7p8mO8w_ecTCS3aNswhNyDuhX14j7XyNUWg22dAF5wr4jpQyY31epaCFp9yq3XFQlgIsaywy6AZJId-7OthFN_inmcH9qDjHEI5vxW-zQoWikTh-B3vCnAISCFUNtpK04Wq9tIzg6sU7ewnj7ZgciYaO3vf6TIW95lBkYAA3_xb0Oh4uQYfbrZzEhmCXyWWlCwcg19q0Dw4X0e_mfU71RVnsV7_JkQYKnOPaGcZ1GrY4xgNN1AyKsKd81yM8"/>
+</div>
+<div class="gallery-item aspect-square overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover" data-alt="A serene spa reception desk made of polished light wood and gold trim, featuring a minimalist flower arrangement in a glass vase. The background shows a soft-focus view of a calm corridor, evoking a feeling of exclusive entry into a world of quiet opulence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS9xHGvREs6rlg5hoqLjNPUVSUPkJDHCEo1db3idzyUWgMM8qSds2EpSKxrQXEiu_YJxq91ex73zLviRUL9hdyL9BT7LOKekR0TAS7jHBwQhpryt5lLSKIEws3-ojriX9_pKIAOg1JGg5ag4oK5KfGeDlLigO136J7roFzV17E1Z79TMxxhDwyvjgpW2Xl38wbdAQR5pRFkkpN9pyHliHv-DjCqfAS4If6sxd7zsDweDn4GVeecd46GhOSt8jMlnY1tzxA4-ijDMk"/>
+</div>
+<div class="gallery-item aspect-square overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover" data-alt="Warm golden tea being poured into a delicate ceramic cup on a tray with a single orchid. This represents the welcome ritual at the ML Beauty Bar Spa, emphasizing hospitality and detail-oriented luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTo2aLC__MYqcNGormYdjAoSVHYMCMl62c7uHdsfkRXE73NOx9Q5s7D76TGfvoABf91lKOjgyOB8LSlzVv2dTjq0Arj7TkfCPcAAmK5zc3rSCABPvX1e9Kp9LtFOxRvYhh4ZAoxRJq0VsXwnYwsOX-NdGvvCwOw6_IPJybPyYHEqlbQnKG4FqCAz3LBskam8KdtofK2Ay3iOsURheF3m5mVlt5oMGvxSq8PX2PCp_-1xRxjxb5LnUOUOX_xpKb668lQ5Lom_deXc"/>
+</div>
+<div class="gallery-item aspect-square overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover" data-alt="A specialized skincare treatment bottle with a gold pump, sitting on a back-lit glass shelf. The image highlights the premium, high-tech nature of the beauty products used in the spa." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKeH8Wx70qpcdnM7aFKQ-DMc0_QZ4vDfmcVuRb3wHK5BSw2ifhhxOoJ5sWHKfpmTmaZpMTAZLhvGPGLoxUfNogrxPQBM6IWY2iFV0lGI39GZeE2rQIr1UeoUJKYJAPi4c98HLF4KAIo5VIXqrgNB2R9d6ESQOyhwAw6u7JBxIB2UPeED_CEFCQA4dXS6svebBuDr1X-1g4YVkz0CoWYQtUMjLCNIl4UI3LfLqIkgLn5vNW4iSzDWBNQCdWfVlX8kS0gWIf5_efhFM"/>
+</div>
+</div>
+</section>
+<!-- Section Témoignages -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-primary-container/20" id="avis">
+<div class="max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-lg text-center text-primary mb-16 italic">Ce que disent nos hôtes</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-2xl luxury-shadow flex flex-col justify-between">
+<div>
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<p class="font-body-lg text-on-surface italic mb-6">"Belle expérience pour une première.
+Je suis venue avec mes sœurs.
+Un vrai plaisir mais boza cher Lol 🤣"</p>
+</div>
+<div>
+<span class="block font-label-caps text-tertiary">Gloria Chiza</span>
 
-    <!-- Footer -->
-    <footer class="py-12 bg-spa-cream border-t border-spa-gold/20 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="font-display text-2xl font-semibold text-spa-gold">
-                ML <span class="text-spa-dark">Beauty Bar</span>
-            </div>
-            <div class="flex gap-6 text-spa-dark/60 text-sm">
-                <a href="#" class="hover:text-spa-gold transition-colors">Instagram</a>
-                <a href="#" class="hover:text-spa-gold transition-colors">Facebook</a>
-                <a href="#" class="hover:text-spa-gold transition-colors">Contact</a>
-            </div>
-            <div class="text-xs text-spa-dark/40 font-light">
-                © 2026 ML Beauty Bar & Spa. Tous droits réservés.
-            </div>
-        </div>
-    </footer>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl luxury-shadow flex flex-col justify-between">
+<div>
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-on-surface italic mb-6">"Le service est toujours impeccable, un accueil chaleureux : service client au top . Just un petit bémol sur la chaleur de la pièce et le manque même d un verre d eau mais j ai apprécié les prestataires qui étaient à l écoute de tous mes soucis. Vment pas de douleurs 10/10"</p>
+</div>
+<div>
+<span class="block font-label-caps text-tertiary">Nathalie Katenga</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl luxury-shadow flex flex-col justify-between">
+<div>
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-on-surface italic mb-6">"Highly recommend
+The staff is friendly and respectful. The owner is very nice and readily available. They did a great job on me (I swear I was scared to have a bad shape of eyebrows 😂) I’d do it over and over 😉"</p>
+</div>
+<div>
+<span class="block font-label-caps text-tertiary">
 
-    <style>
-        @keyframes pulse {
-            0% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        .animate-pulse-slow {
-            animation: pulse 10s infinite alternate ease-in-out;
-        }
-    </style>
 
-</body>
-</html>
+Dr Grace Mutunda</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Horaires & Contact -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface" id="contact">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="space-y-10">
+<div>
+<h2 class="font-headline-lg text-on-surface mb-4">Contact &amp; Accès</h2>
+<p class="font-body-lg text-on-surface-variant">Notre équipe vous accueille dans un cadre confidentiel et prestigieux.</p>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-tertiary">location_on</span>
+<div>
+<h4 class="font-label-caps text-on-surface font-bold">Adresse</h4>
+<p class="font-body-md text-on-surface-variant">2ème niveau, Bâtiment Hypnose, Lubumbashi, RDC</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-tertiary">schedule</span>
+<div>
+<h4 class="font-label-caps text-on-surface font-bold">Horaires d'ouverture</h4>
+<ul class="font-body-md text-on-surface-variant space-y-1">
+<li>Lundi - Vendredi : 9h00 - 19h00</li>
+<li>Samedi : 10h00 - 19h00</li>
+<li>Dimanche : Fermé</li>
+</ul>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-tertiary">chat</span>
+<div>
+<h4 class="font-label-caps text-on-surface font-bold">WhatsApp &amp; Instagram</h4>
+<div class="flex gap-4 mt-2">
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="https://www.instagram.com/mlbeauty__bar/" target="_blank" rel="noopener">@mlbeauty__bar</a>
+<span class="text-outline-variant">|</span>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="https://wa.me/243816388322">+243 816 388 322</a>
+</div>
+</div>
+</div>
+</div>
+<a class="btn-gold text-on-primary inline-flex items-center gap-3 px-10 py-5 rounded-full font-label-caps uppercase tracking-[0.2em]" href="https://wa.me/243816388322">
+<span class="material-symbols-outlined">calendar_month</span>
+                        Prendre rendez-vous
+                    </a>
+</div>
+<div class="rounded-3xl overflow-hidden luxury-shadow h-[400px] lg:h-auto min-h-[400px]">
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.43!2d27.4811431!3d-11.6640675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723b998759c13b%3A0x27a95cb68192fe60!2sML%20Beauty%20Bar%20spa!5e0!3m2!1sfr!2scd!4v1715295119000"
+  class="w-full h-full border-0"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="ML Beauty Bar Spa - Google Maps">
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-section-gap-mobile md:py-section-gap-desktop border-t border-outline-variant/20">
+<div class="flex flex-col items-center text-center space-y-gutter px-gutter max-w-container-max mx-auto">
+<div class="font-headline-md text-primary tracking-tight">ML Beauty Bar</div>
+<nav class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+<a class="font-body-md text-on-surface-variant hover:text-tertiary transition-colors duration-300" href="https://www.instagram.com/mlbeauty__bar/" target="_blank" rel="noopener">Instagram</a>
+<a class="font-body-md text-on-surface-variant hover:text-tertiary transition-colors duration-300" href="https://wa.me/243816388322">WhatsApp</a>
+<a class="font-body-md text-on-surface-variant hover:text-tertiary transition-colors duration-300" href="#contact">Heures d'ouverture</a>
+<a class="font-body-md text-on-surface-variant hover:text-tertiary transition-colors duration-300" href="#">Mentions Légales</a>
+</nav>
+<div class="pt-8 border-t border-outline-variant/10 w-full">
+<p class="font-body-md text-on-surface-variant/60">
+                    © 2026 ML Beauty Bar Spa. Quiet Opulence in Lubumbashi.
+                </p>
+</div>
+</div>
+</footer>
+<!-- Custom Cursor -->
+<div class="custom-cursor hidden lg:block" id="cursor"></div>
+<script>
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', e => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.style.transform = 'scale(2.5)');
+            el.addEventListener('mouseleave', () => cursor.style.transform = 'scale(1)');
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
+</body></html>
